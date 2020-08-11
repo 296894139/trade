@@ -329,14 +329,24 @@
 .skin-purple .carousel-1 .owl-nav .owl-prev:hover, .skin-purple .carousel-1 .owl-nav .owl-next:hover {
   background-color: #8e44ad;
 }
+
 .skin-purple .nav-tabs-group .nav-tabs-list li.active a {
   border-bottom: 2px solid #8e44ad;
 }
+
+
 .skin-purple .nav-tabs-group .form-control {
   height: 30px;
   padding: 0;
   margin-top: 3px;
 }
+
+
+
+.divcss5 img{ width:290px; height:150px} 
+
+
+
 .skin-purple .nav-tabs-group .nav-tabs-right {
   float: right;
   display: inline-block;
