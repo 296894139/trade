@@ -1,0 +1,54 @@
+#server:
+#  port: 8080
+server:
+  port: 5030
+#  ssl:
+#      key-store: config/mycert.jks
+#      key-store-password: 3Wb0396O
+#      key-store-type: JKS
+logging:
+  level:
+    org.springframework:
+      data: DEBUG
+      security: DEBUG
+jwt:
+  claimKey:
+    username: "username"
+    authorities: "authorities"
+  secret: "wfhg9hr-1jfpjf-p3j-=vgf0pvmo3k=2-3rj0-3j=gn[=3-g[mj"
+  header: Authorization
+  tokenHead: "Bearer "
+oos:
+  accessKey: "LTAIHH1AzXgeofde"
+  secretKey: "VewUZGM7miUFplRCfo3nGTTFuKeJWX"
+  endPoint: "http://oss-cn-hangzhou.aliyuncs.com"
+  bucketName: "take-out"
+spring:
+  jpa:
+    database: mysql
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/trade?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+  aop:
+    auto: true
+    proxy-target-class: false
+wechat:
+  url: https://api.weixin.qq.com/sns/jscode2session?appid=
+  order_url: https://api.mch.weixin.qq.com/pay/unifiedorder
+  id: wx925bde00c413bb22
+  secret: d102d7a1487ae1124ae9cf398109ca07
+  mch_id: 1562923061
+  body: 金酱直营酒庄
+  device_info: WEB
+  notify_url: https://www.shaoshanlu.com:3389/order/getWxPayResult
+  trade_type: JSAPI
+  api_key: jinjiangjinjiangjinjiang12345678
+  sign_type: MD5
